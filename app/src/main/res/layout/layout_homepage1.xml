@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <SearchView
+            android:id="@+id/svProductInHomePage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="6"
+            android:background="#00ECA100"
+            android:defaultFocusHighlightEnabled="true"
+            android:iconifiedByDefault="false"
+            android:outlineSpotShadowColor="#358F00"
+            android:queryHint="Search here" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF">
+
+            <ImageButton
+                android:id="@+id/imgBtnCartInHomePage"
+                android:layout_width="66dp"
+                android:layout_height="70dp"
+                android:backgroundTint="#FFFFFF"
+                android:contentDescription="Cart"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.979"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/cart"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/txtNumberProductOfCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="36dp"
+                android:background="@drawable/customcart"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="0"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spnCategoryInHomePage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp" />
+
+    <GridView
+        android:id="@+id/gvProductInHomePage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2" />
+</LinearLayout>

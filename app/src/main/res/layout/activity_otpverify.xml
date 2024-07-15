@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="Nhập OTP"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/et_otp_1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_margin="4dp"/>
+
+        <EditText
+            android:id="@+id/et_otp_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_margin="4dp"/>
+
+        <EditText
+            android:id="@+id/et_otp_3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_margin="4dp"/>
+
+        <EditText
+            android:id="@+id/et_otp_4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_margin="4dp"/>
+
+        <EditText
+            android:id="@+id/et_otp_5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_margin="4dp"/>
+
+        <EditText
+            android:id="@+id/et_otp_6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_margin="4dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Xác nhận"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
